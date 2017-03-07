@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.elicastrillon.figurasgeometricas.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text =" Escoje la Figura Geometrica que Quieras Calcular."
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        />
+
+
+    <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/posicion"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cuadrado"
+           android:textColor="@color/blue"
+           android:id="@+id/cCuadrado"
+           android:onClick="onRadioButtonClicked"
+           />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/cuadrado"/>
+
+        <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Circulo"
+           android:textColor="@color/blue"
+           android:id="@+id/cCirculo"
+           android:onClick="onRadioButtonClicked"
+           />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/circulo"/>
+
+        <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Triángulo Rectangulo"
+           android:textColor="@color/blue"
+           android:id="@+id/tTriangulo"
+           android:onClick="onRadioButtonClicked"
+           />
+
+        <ImageView
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:layout_height="match_parent"
+           android:src="@drawable/triangulo"/>
+
+        <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cubo"
+           android:textColor="@color/blue"
+           android:id="@+id/cCubo"
+           android:onClick="onRadioButtonClicked"
+           />
+   </RadioGroup>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"><![CDATA[
+       />
+
+
+
+       />
+
+
+
+        />
+
+       ]]>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.16"
+            android:src="@drawable/cubo" />
+        />
+
+        <Button
+            android:id="@+id/sSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrar la Aplicación"
+            android:textSize="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"/>
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>

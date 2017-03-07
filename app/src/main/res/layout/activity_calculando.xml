@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cuadrado1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.elicastrillon.figurasgeometricas.Calculando"
+    android:weightSum="1">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/nombreFigura"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_weight="0.55">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Ingrese el Ancho"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:id="@+id/aAncho"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Ingrese el Alto"
+            android:textSize="12dp"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:id="@+id/alto"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:hint="Ingrese el largo"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:id="@+id/largo"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_weight="0.15">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:hint="Perimetro"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:id="@+id/perimetro"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:hint="Area"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:id="@+id/area"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:hint="Volumen"
+            android:textAlignment="center"
+            android:focusable="false"
+            android:id="@+id/volumen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_calcular"
+            android:layout_weight="1"
+            android:layout_marginTop="70dp" />
+
+        <Button
+            android:text="Limpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_limpiar"
+            android:layout_weight="1"
+            android:layout_marginTop="70dp" />
+
+        <Button
+            android:text="Volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_volver"
+            android:layout_weight="1"
+            android:layout_marginTop="70dp" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
